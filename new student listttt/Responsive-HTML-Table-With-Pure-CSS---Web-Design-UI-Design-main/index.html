@@ -1,0 +1,208 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Student Information</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Student's Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">x
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Roll.No<span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Profile</th>
+                        <th> Student <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Gender <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Course Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Admission Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Completion Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Year <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Course Fees <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Fees Paid <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Balance <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 13204 </td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""></td>
+                        <td> Zinzu Chan Lee</td>
+                        <td> Female </td>
+                        <td> Diploma in Python Technology </td>
+                        <td> Sept 3, 2023</td>
+                        <td> March 3, 2024 </td>
+                        <td> 2023</td>
+                        <td> 20000 </td>
+                        <td> 20000</td>
+                        <td> 0</td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 120354</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""></td>
+                        <td> Jeet Saru </td>
+                        <td> Male </td>
+                        <td> Diploma in Computer Operationg System </td>
+                        <td> Jul 24,2022 </td>
+                        <td> Oct 24,2022</td>
+                        <td> 2022</td>
+                        <td> 2800 </td>
+                        <td> 2000</td>
+                        <td> 800</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 14354</td>
+                        <td><img src="images/Zinzu Chan Lee.jpg" alt=""></td>
+                        <td> Sonal Gharti </td>
+                        <td> Female </td>
+                        <td> Diploma in Desktop Publication</td>
+                        <td> Feb 19,2021 </td>
+                        <td> May 19,2021</td>
+                        <td> 2021</td>
+                        <td> 4500 </td>
+                        <td> 3000</td>
+                        <td> 1500 </td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 13554</td>
+                        <td><img src="images/Alson GC.jpg" alt=""></td>
+                        <td> Sonal Gharti </td>
+                        <td> Female</td>
+                        <td> Diploma in Office Automation</td>
+                        <td> May 23,2021 </td>
+                        <td> Nov 23,2021</td>
+                        <td> 2021</td>
+                        <td> 8000 </td>
+                        <td> 5000 </td>
+                        <td> 3000 </td>
+                        <td>
+                            <p class="status cancelled"> Cancelled</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 13204 </td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""></td>
+                        <td> Zinzu Chan Lee</td>
+                        <td> Female </td>
+                        <td> Diploma in Python Technology </td>
+                        <td> Sept 3, 2023</td>
+                        <td> March 3, 2024 </td>
+                        <td> 2023</td>
+                        <td> 20000 </td>
+                        <td> 20000</td>
+                        <td> 0</td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 120354</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""></td>
+                        <td> Jeet Saru </td>
+                        <td> Male </td>
+                        <td> Diploma in Computer Operationg System </td>
+                        <td> Jul 24,2022 </td>
+                        <td> Oct 24,2022</td>
+                        <td> 2022</td>
+                        <td> 2800 </td>
+                        <td> 2000</td>
+                        <td> 800</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 14354</td>
+                        <td><img src="images/Zinzu Chan Lee.jpg" alt=""></td>
+                        <td> Sonal Gharti </td>
+                        <td> Female </td>
+                        <td> Diploma in Desktop Publication</td>
+                        <td> Feb 19,2021 </td>
+                        <td> May 19,2021</td>
+                        <td> 2021</td>
+                        <td> 4500 </td>
+                        <td> 3000</td>
+                        <td> 1500 </td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 13554</td>
+                        <td><img src="images/Alson GC.jpg" alt=""></td>
+                        <td> Sonal Gharti </td>
+                        <td> Female</td>
+                        <td> Diploma in Office Automation</td>
+                        <td> May 23,2021 </td>
+                        <td> Nov 23,2021</td>
+                        <td> 2021</td>
+                        <td> 8000 </td>
+                        <td> 5000 </td>
+                        <td> 3000 </td>
+                        <td>
+                            <p class="status cancelled"> Cancelled</p>
+                        </td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
